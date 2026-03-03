@@ -10,22 +10,23 @@
   <style>
     /* Reset & base styles */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #f9f9f9; color: #111; cursor: url('cat.ani'), auto; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: url('https://i.pinimg.com/originals/d8/c9/1a/d8c91a38ba7965bcc7ad62335ae279a7.gif') center center / cover fixed; color: #fff; }
+    body::before { content: ''; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: -1; }
     /* Header & nav */
-    header { position: sticky; top:0; background: #fff; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    header { position: sticky; top:0; background: rgba(0,0,0,0.6); padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
     nav ul { display: flex; justify-content: center; list-style: none; }
     nav li { margin: 0 15px; }
-    nav a { text-decoration: none; color: #111; font-weight: 500; }
+    nav a { text-decoration: none; color: #fff; font-weight: 500; }
     /* Hero Section */
-    .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, #f0f0f0, #d0d0d0); }
+    .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: transparent; }
     .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 15px; }
-    .hero p { font-size: 1.25rem; color: #555; }
+    .hero p { font-size: 1.25rem; color: #ddd; }
     /* Sections */
     section { padding: 80px 20px; max-width: 900px; margin: auto; }
     h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 20px; text-align: center; }
     /* Contact Form */
     form { display: flex; flex-direction: column; gap: 15px; }
-    input, textarea { padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    input, textarea { padding: 10px; font-size: 1rem; border: 1px solid #555; border-radius: 5px; background: rgba(255,255,255,0.1); color: #fff; }
     button { padding: 12px; font-size: 1rem; border: none; border-radius: 5px; background: #111; color: #fff; cursor: pointer; transition: 0.3s; }
     button:hover { background: #444; }
     button:disabled { background: #888; cursor: not-allowed; }
@@ -43,8 +44,7 @@
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#music">Music</a></li>
+        <li><a href="#discord">Discord</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -59,12 +59,12 @@
     <h2>About Me</h2>
     <p>I love tcc, I am apart of the true crime community. I love movies like elephant, zero day etc.</p>
   </section>
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <h2>Portfolio</h2>
+  <!-- Discord Section -->
+  <section id="discord">
+    <h2>Discord</h2>
     <p><iframe src="https://discord.com/widget?id=1478169703259181189&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></p>
   </section>
-  <!-- Music Section -->
+  <!-- Music Section (no nav tab) -->
   <section id="music">
     <h2>Now Playing</h2>
     <audio controls style="width:100%;">
