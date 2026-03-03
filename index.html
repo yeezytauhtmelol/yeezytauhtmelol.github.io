@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jim's Site</title>
+  <title>Jim's Website</title>
   <link rel="icon" type="image/x-icon" href="calvin.ico">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     /* Reset & base styles */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #f9f9f9; color: #111; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #f9f9f9; color: #111; cursor: url('cursor.ani'), auto; }
     /* Header & nav */
     header { position: sticky; top:0; background: #fff; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
     nav ul { display: flex; justify-content: center; list-style: none; }
@@ -67,7 +67,9 @@
   <!-- Music Section -->
   <section id="music">
     <h2>Now Playing</h2>
-    <audio autoplay><source src="VIDEOCLUB.mp3"></audio>
+    <audio controls style="width:100%;">
+      <source src="VIDEOCLUB.mp3" type="audio/mpeg">
+    </audio>
   </section>
   <!-- Contact Section -->
   <section id="contact">
