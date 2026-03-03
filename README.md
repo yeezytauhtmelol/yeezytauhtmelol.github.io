@@ -43,6 +43,7 @@
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#music">Music</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -78,6 +79,11 @@
       <button type="submit" id="submit-btn">Send</button>
     </form>
     <p id="response" style="margin-top:10px;"></p>
+  </section>
+  <!-- Music Section -->
+  <section id="music">
+    <h2>Now Playing</h2>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/269XSeQhDrWEotMALJaACW?utm_source=generator&autoplay=1" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager"></iframe>
   </section>
   <!-- Footer -->
   <footer>
